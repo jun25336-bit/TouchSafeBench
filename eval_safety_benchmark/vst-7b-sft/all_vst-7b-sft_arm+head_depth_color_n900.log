@@ -1,0 +1,121 @@
+00:43:30 [INFO] Run tag: all_vst-7b-sft_arm+head_depth_color_n900
+00:43:30 [INFO] Config: task=all, provider=local, model=vst-7b-sft, views=['arm', 'head'], modality=depth_color, max_samples=450, clip_size=3, dry_run=False, resume=True
+00:43:30 [INFO] Loading local model: rayruiyang/VST-7B-SFT (family: qwen2vl)
+00:43:33 [INFO] Qwen-VL attn_implementation: sdpa
+00:43:39 [INFO] Model loaded: rayruiyang/VST-7B-SFT
+00:43:39 [INFO]   transformers: 4.57.6
+00:43:39 [INFO]   torch: 2.8.0+cu128
+00:43:39 [INFO]   CUDA: 12.8
+00:43:39 [INFO]   model commit: 2841c2c899beac8bbb486700faa7b521f1f69d53
+00:43:39 [INFO] 
+============================================================
+00:43:39 [INFO] Running Task 1: Safety Event Classification
+00:43:39 [INFO] ============================================================
+00:43:54 [INFO]   [1/450] t1_A_hard_23730 gt=A pred=A [OK] tok=3305 cumul=3,305
+00:44:09 [INFO]   [2/450] t1_B_5315 gt=B pred=C [MISS] tok=3339 cumul=6,644
+00:44:25 [INFO]   [3/450] t1_B_2646 gt=B pred=A [MISS] tok=3359 cumul=10,003
+00:46:08 [INFO]   [4/450] t1_B_2210 gt=B pred=UNKNOWN [MISS] tok=7219 cumul=17,222
+00:46:27 [INFO]   [5/450] t1_B_3388 gt=B pred=A [MISS] tok=3562 cumul=20,784
+00:46:42 [INFO]   [6/450] t1_A_hard_22213 gt=A pred=C [MISS] tok=3465 cumul=24,249
+00:46:54 [INFO]   [7/450] t1_B_3721 gt=B pred=A [MISS] tok=3297 cumul=27,546
+00:48:38 [INFO]   [8/450] t1_B_2542 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=34,766
+00:50:20 [INFO]   [9/450] t1_B_2281 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=41,986
+00:50:44 [INFO]   [10/450] t1_A_easy_13777 gt=A pred=A [OK] tok=3812 cumul=45,798
+00:51:08 [INFO]   [11/450] t1_B_5551 gt=B pred=A [MISS] tok=3794 cumul=49,592
+00:51:27 [INFO]   [12/450] t1_C_8683 gt=C pred=B [MISS] tok=3632 cumul=53,224
+00:51:46 [INFO]   [13/450] t1_C_7258 gt=C pred=C [OK] tok=3592 cumul=56,816
+00:52:04 [INFO]   [14/450] t1_A_hard_24319 gt=A pred=C [MISS] tok=3597 cumul=60,413
+00:52:18 [INFO]   [15/450] t1_C_7883 gt=C pred=A [MISS] tok=3402 cumul=63,815
+00:52:37 [INFO]   [16/450] t1_C_8677 gt=C pred=C [OK] tok=3594 cumul=67,409
+00:52:52 [INFO]   [17/450] t1_C_8669 gt=C pred=A [MISS] tok=3456 cumul=70,865
+00:53:05 [INFO]   [18/450] t1_B_1908 gt=B pred=C [MISS] tok=3335 cumul=74,200
+00:54:45 [INFO]   [19/450] t1_C_7882 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=81,420
+00:54:59 [INFO]   [20/450] t1_A_hard_21522 gt=A pred=A [OK] tok=3385 cumul=84,805
+00:55:12 [INFO]   [21/450] t1_A_hard_24232 gt=A pred=A [OK] tok=3357 cumul=88,162
+00:56:53 [INFO]   [22/450] t1_B_1529 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=95,382
+00:57:06 [INFO]   [23/450] t1_B_4973 gt=B pred=A [MISS] tok=3381 cumul=98,763
+00:57:20 [INFO]   [24/450] t1_A_easy_17691 gt=A pred=A [OK] tok=3376 cumul=102,139
+00:57:40 [INFO]   [25/450] t1_A_hard_23475 gt=A pred=A [OK] tok=3701 cumul=105,840
+00:57:52 [INFO]   [26/450] t1_B_1662 gt=B pred=A [MISS] tok=3301 cumul=109,141
+00:59:32 [INFO]   [27/450] t1_A_hard_23397 gt=A pred=UNKNOWN [MISS] tok=7220 cumul=116,361
+01:01:13 [INFO]   [28/450] t1_B_6338 gt=B pred=UNKNOWN [MISS] tok=7218 cumul=123,579
+01:02:54 [INFO]   [29/450] t1_B_5749 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=130,799
+01:03:22 [INFO]   [30/450] t1_C_7006 gt=C pred=A [MISS] tok=4035 cumul=134,834
+01:03:50 [INFO]   [31/450] t1_C_7658 gt=C pred=UNKNOWN [MISS] tok=4001 cumul=138,835
+01:04:02 [INFO]   [32/450] t1_C_8442 gt=C pred=C [OK] tok=3301 cumul=142,136
+01:04:22 [INFO]   [33/450] t1_A_easy_19668 gt=A pred=A [OK] tok=3651 cumul=145,787
+01:04:34 [INFO]   [34/450] t1_C_6665 gt=C pred=A [MISS] tok=3318 cumul=149,105
+01:04:48 [INFO]   [35/450] t1_A_hard_24303 gt=A pred=C [MISS] tok=3402 cumul=152,507
+01:05:00 [INFO]   [36/450] t1_B_4758 gt=B pred=A [MISS] tok=3336 cumul=155,843
+01:05:15 [INFO]   [37/450] t1_A_hard_23091 gt=A pred=C [MISS] tok=3470 cumul=159,313
+01:06:56 [INFO]   [38/450] t1_A_hard_22399 gt=A pred=UNKNOWN [MISS] tok=7220 cumul=166,533
+01:07:17 [INFO]   [39/450] t1_B_2233 gt=B pred=C [MISS] tok=3696 cumul=170,229
+01:07:29 [INFO]   [40/450] t1_A_hard_24073 gt=A pred=A [OK] tok=3332 cumul=173,561
+01:07:44 [INFO]   [41/450] t1_C_8252 gt=C pred=C [OK] tok=3438 cumul=176,999
+01:08:08 [INFO]   [42/450] t1_A_easy_16495 gt=A pred=UNKNOWN [MISS] tok=3824 cumul=180,823
+01:08:38 [INFO]   [43/450] t1_B_1703 gt=B pred=A [MISS] tok=4128 cumul=184,951
+01:08:50 [INFO]   [44/450] t1_C_7899 gt=C pred=A [MISS] tok=3301 cumul=188,252
+01:09:12 [INFO]   [45/450] t1_C_7752 gt=C pred=A [MISS] tok=3739 cumul=191,991
+01:09:25 [INFO]   [46/450] t1_C_7709 gt=C pred=A [MISS] tok=3354 cumul=195,345
+01:09:38 [INFO]   [47/450] t1_B_3445 gt=B pred=A [MISS] tok=3348 cumul=198,693
+01:09:50 [INFO]   [48/450] t1_C_7044 gt=C pred=A [MISS] tok=3296 cumul=201,989
+01:10:10 [INFO]   [49/450] t1_A_easy_12976 gt=A pred=B [MISS] tok=3681 cumul=205,670
+01:10:23 [INFO]   [50/450] t1_C_8021 gt=C pred=A [MISS] tok=3353 cumul=209,023
+01:10:45 [INFO]   [51/450] t1_A_hard_24688 gt=A pred=C [MISS] tok=3759 cumul=212,782
+01:10:58 [INFO]   [52/450] t1_B_2853 gt=B pred=A [MISS] tok=3346 cumul=216,128
+01:11:15 [INFO]   [53/450] t1_C_8184 gt=C pred=A [MISS] tok=3530 cumul=219,658
+01:12:55 [INFO]   [54/450] t1_C_7542 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=226,878
+01:14:36 [INFO]   [55/450] t1_B_4664 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=234,098
+01:16:16 [INFO]   [56/450] t1_C_6713 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=241,318
+01:16:36 [INFO]   [57/450] t1_B_505 gt=B pred=C [MISS] tok=3649 cumul=244,967
+01:17:00 [INFO]   [58/450] t1_B_2622 gt=B pred=A [MISS] tok=3820 cumul=248,787
+01:17:22 [INFO]   [59/450] t1_A_easy_15498 gt=A pred=A [OK] tok=3718 cumul=252,505
+01:17:37 [INFO]   [60/450] t1_C_7528 gt=C pred=A [MISS] tok=3446 cumul=255,951
+01:17:51 [INFO]   [61/450] t1_C_6730 gt=C pred=A [MISS] tok=3358 cumul=259,309
+01:18:08 [INFO]   [62/450] t1_B_3144 gt=B pred=A [MISS] tok=3422 cumul=262,731
+01:18:22 [INFO]   [63/450] t1_C_7305 gt=C pred=C [OK] tok=3301 cumul=266,032
+01:18:37 [INFO]   [64/450] t1_B_4966 gt=B pred=A [MISS] tok=3335 cumul=269,367
+01:20:19 [INFO]   [65/450] t1_C_8369 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=276,587
+01:20:33 [INFO]   [66/450] t1_C_8097 gt=C pred=A [MISS] tok=3380 cumul=279,967
+01:22:14 [INFO]   [67/450] t1_C_8777 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=287,187
+01:22:38 [INFO]   [68/450] t1_C_8620 gt=C pred=A [MISS] tok=3833 cumul=291,020
+01:22:51 [INFO]   [69/450] t1_B_829 gt=B pred=B [OK] tok=3314 cumul=294,334
+01:23:10 [INFO]   [70/450] t1_C_7566 gt=C pred=A [MISS] tok=3614 cumul=297,948
+01:23:24 [INFO]   [71/450] t1_A_hard_24816 gt=A pred=UNKNOWN [MISS] tok=3407 cumul=301,355
+01:25:05 [INFO]   [72/450] t1_B_4073 gt=B pred=UNKNOWN [MISS] tok=7217 cumul=308,572
+01:26:47 [INFO]   [73/450] t1_B_4991 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=315,792
+01:27:01 [INFO]   [74/450] t1_A_easy_18188 gt=A pred=C [MISS] tok=3379 cumul=319,171
+01:28:51 [INFO]   [75/450] t1_C_8115 gt=C pred=UNKNOWN [MISS] tok=7223 cumul=326,394
+01:30:32 [INFO]   [76/450] t1_B_6647 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=333,614
+01:32:13 [INFO]   [77/450] t1_B_3588 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=340,834
+01:32:42 [INFO]   [78/450] t1_C_8161 gt=C pred=C [OK] tok=4055 cumul=344,889
+01:33:03 [INFO]   [79/450] t1_C_8616 gt=C pred=A [MISS] tok=3688 cumul=348,577
+01:33:15 [INFO]   [80/450] t1_B_2665 gt=B pred=C [MISS] tok=3287 cumul=351,864
+01:34:56 [INFO]   [81/450] t1_A_hard_22183 gt=A pred=UNKNOWN [MISS] tok=7220 cumul=359,084
+01:35:10 [INFO]   [82/450] t1_A_hard_23363 gt=A pred=C [MISS] tok=3365 cumul=362,449
+01:35:51 [INFO]   [83/450] t1_B_2444 gt=B pred=A [MISS] tok=4592 cumul=367,041
+01:37:31 [INFO]   [84/450] t1_B_6168 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=374,261
+01:39:12 [INFO]   [85/450] t1_B_5335 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=381,481
+01:39:32 [INFO]   [86/450] t1_B_1030 gt=B pred=A [MISS] tok=3559 cumul=385,040
+01:39:46 [INFO]   [87/450] t1_C_8040 gt=C pred=C [OK] tok=3379 cumul=388,419
+01:40:17 [INFO]   [88/450] t1_A_easy_10999 gt=A pred=C [MISS] tok=4070 cumul=392,489
+01:40:30 [INFO]   [89/450] t1_C_7791 gt=C pred=A [MISS] tok=3356 cumul=395,845
+01:40:43 [INFO]   [90/450] t1_A_hard_21491 gt=A pred=C [MISS] tok=3353 cumul=399,198
+01:40:54 [INFO]   [91/450] t1_C_6888 gt=C pred=C [OK] tok=3301 cumul=402,499
+01:41:17 [INFO]   [92/450] t1_C_8235 gt=C pred=A [MISS] tok=3770 cumul=406,269
+01:41:30 [INFO]   [93/450] t1_A_hard_22320 gt=A pred=A [OK] tok=3355 cumul=409,624
+01:41:41 [INFO]   [94/450] t1_C_8472 gt=C pred=A [MISS] tok=3291 cumul=412,915
+01:41:54 [INFO]   [95/450] t1_B_3244 gt=B pred=A [MISS] tok=3345 cumul=416,260
+01:42:11 [INFO]   [96/450] t1_C_6666 gt=C pred=A [MISS] tok=3560 cumul=419,820
+01:43:52 [INFO]   [97/450] t1_C_7059 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=427,040
+01:44:13 [INFO]   [98/450] t1_A_hard_24982 gt=A pred=A [OK] tok=3728 cumul=430,768
+01:44:25 [INFO]   [99/450] t1_C_6736 gt=C pred=C [OK] tok=3316 cumul=434,084
+01:44:39 [INFO]   [100/450] t1_C_8788 gt=C pred=A [MISS] tok=3397 cumul=437,481
+01:46:20 [INFO]   [101/450] t1_C_8476 gt=C pred=UNKNOWN [MISS] tok=7220 cumul=444,701
+01:46:34 [INFO]   [102/450] t1_B_5241 gt=B pred=A [MISS] tok=3386 cumul=448,087
+01:46:48 [INFO]   [103/450] t1_C_7445 gt=C pred=A [MISS] tok=3380 cumul=451,467
+01:47:06 [INFO]   [104/450] t1_C_7372 gt=C pred=A [MISS] tok=3565 cumul=455,032
+01:48:48 [INFO]   [105/450] t1_B_2668 gt=B pred=UNKNOWN [MISS] tok=7220 cumul=462,252
+01:49:01 [INFO]   [106/450] t1_B_3964 gt=B pred=A [MISS] tok=3352 cumul=465,604
+01:50:43 [INFO]   [107/450] t1_A_easy_18642 gt=A pred=UNKNOWN [MISS] tok=7216 cumul=472,820
+01:52:24 [INFO]   [108/450] t1_A_easy_19828 gt=A pred=UNKNOWN [MISS] tok=7220 cumul=480,040

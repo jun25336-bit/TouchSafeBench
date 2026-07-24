@@ -1,0 +1,348 @@
+{
+  "total": 49,
+  "scenes": [
+    {
+      "scene_name": "102344022",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344022.scene_instance.json",
+      "image": "102344022.png",
+      "meta": "102344022.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344049",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344049.scene_instance.json",
+      "image": "102344049.png",
+      "meta": "102344049.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344193",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344193.scene_instance.json",
+      "image": "102344193.png",
+      "meta": "102344193.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344250",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344250.scene_instance.json",
+      "image": "102344250.png",
+      "meta": "102344250.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344280",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344280.scene_instance.json",
+      "image": "102344280.png",
+      "meta": "102344280.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344403",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344403.scene_instance.json",
+      "image": "102344403.png",
+      "meta": "102344403.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344457",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344457.scene_instance.json",
+      "image": "102344457.png",
+      "meta": "102344457.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102344529",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344529.scene_instance.json",
+      "image": "102344529.png",
+      "meta": "102344529.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102815859",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102815859.scene_instance.json",
+      "image": "102815859.png",
+      "meta": "102815859.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102816009",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102816009.scene_instance.json",
+      "image": "102816009.png",
+      "meta": "102816009.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102816216",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102816216.scene_instance.json",
+      "image": "102816216.png",
+      "meta": "102816216.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102816756",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102816756.scene_instance.json",
+      "image": "102816756.png",
+      "meta": "102816756.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102817140",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102817140.scene_instance.json",
+      "image": "102817140.png",
+      "meta": "102817140.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "102817200",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102817200.scene_instance.json",
+      "image": "102817200.png",
+      "meta": "102817200.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "103997424_171030444",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/103997424_171030444.scene_instance.json",
+      "image": "103997424_171030444.png",
+      "meta": "103997424_171030444.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "103997460_171030507",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/103997460_171030507.scene_instance.json",
+      "image": "103997460_171030507.png",
+      "meta": "103997460_171030507.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "103997586_171030669",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/103997586_171030669.scene_instance.json",
+      "image": "103997586_171030669.png",
+      "meta": "103997586_171030669.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "103997895_171031182",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/103997895_171031182.scene_instance.json",
+      "image": "103997895_171031182.png",
+      "meta": "103997895_171031182.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "103997919_171031233",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/103997919_171031233.scene_instance.json",
+      "image": "103997919_171031233.png",
+      "meta": "103997919_171031233.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104348082_171512994",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104348082_171512994.scene_instance.json",
+      "image": "104348082_171512994.png",
+      "meta": "104348082_171512994.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104348328_171513363",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104348328_171513363.scene_instance.json",
+      "image": "104348328_171513363.png",
+      "meta": "104348328_171513363.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104348361_171513414",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104348361_171513414.scene_instance.json",
+      "image": "104348361_171513414.png",
+      "meta": "104348361_171513414.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104348463_171513588",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104348463_171513588.scene_instance.json",
+      "image": "104348463_171513588.png",
+      "meta": "104348463_171513588.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104862621_172226772",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104862621_172226772.scene_instance.json",
+      "image": "104862621_172226772.png",
+      "meta": "104862621_172226772.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104862639_172226823",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104862639_172226823.scene_instance.json",
+      "image": "104862639_172226823.png",
+      "meta": "104862639_172226823.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104862660_172226844",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104862660_172226844.scene_instance.json",
+      "image": "104862660_172226844.png",
+      "meta": "104862660_172226844.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104862669_172226853",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104862669_172226853.scene_instance.json",
+      "image": "104862669_172226853.png",
+      "meta": "104862669_172226853.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "104862681_172226874",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/104862681_172226874.scene_instance.json",
+      "image": "104862681_172226874.png",
+      "meta": "104862681_172226874.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "105515211_173104179",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/105515211_173104179.scene_instance.json",
+      "image": "105515211_173104179.png",
+      "meta": "105515211_173104179.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "105515448_173104512",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/105515448_173104512.scene_instance.json",
+      "image": "105515448_173104512.png",
+      "meta": "105515448_173104512.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106366173_174226431",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106366173_174226431.scene_instance.json",
+      "image": "106366173_174226431.png",
+      "meta": "106366173_174226431.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106366353_174226695",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106366353_174226695.scene_instance.json",
+      "image": "106366353_174226695.png",
+      "meta": "106366353_174226695.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106366386_174226770",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106366386_174226770.scene_instance.json",
+      "image": "106366386_174226770.png",
+      "meta": "106366386_174226770.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106366410_174226806",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106366410_174226806.scene_instance.json",
+      "image": "106366410_174226806.png",
+      "meta": "106366410_174226806.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106878915_174887025",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106878915_174887025.scene_instance.json",
+      "image": "106878915_174887025.png",
+      "meta": "106878915_174887025.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106878945_174887058",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106878945_174887058.scene_instance.json",
+      "image": "106878945_174887058.png",
+      "meta": "106878945_174887058.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "106879044_174887172",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/106879044_174887172.scene_instance.json",
+      "image": "106879044_174887172.png",
+      "meta": "106879044_174887172.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "107733960_175999701",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/107733960_175999701.scene_instance.json",
+      "image": "107733960_175999701.png",
+      "meta": "107733960_175999701.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "107734176_176000019",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/107734176_176000019.scene_instance.json",
+      "image": "107734176_176000019.png",
+      "meta": "107734176_176000019.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "107734449_176000403",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/107734449_176000403.scene_instance.json",
+      "image": "107734449_176000403.png",
+      "meta": "107734449_176000403.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "107734479_176000442",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/107734479_176000442.scene_instance.json",
+      "image": "107734479_176000442.png",
+      "meta": "107734479_176000442.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108294573_176710113",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108294573_176710113.scene_instance.json",
+      "image": "108294573_176710113.png",
+      "meta": "108294573_176710113.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108294870_176710551",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108294870_176710551.scene_instance.json",
+      "image": "108294870_176710551.png",
+      "meta": "108294870_176710551.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108294897_176710602",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108294897_176710602.scene_instance.json",
+      "image": "108294897_176710602.png",
+      "meta": "108294897_176710602.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108736635_177263256",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108736635_177263256.scene_instance.json",
+      "image": "108736635_177263256.png",
+      "meta": "108736635_177263256.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108736737_177263406",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108736737_177263406.scene_instance.json",
+      "image": "108736737_177263406.png",
+      "meta": "108736737_177263406.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108736824_177263559",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108736824_177263559.scene_instance.json",
+      "image": "108736824_177263559.png",
+      "meta": "108736824_177263559.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108736851_177263586",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108736851_177263586.scene_instance.json",
+      "image": "108736851_177263586.png",
+      "meta": "108736851_177263586.json",
+      "ortho_scale": null
+    },
+    {
+      "scene_name": "108736872_177263607",
+      "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/108736872_177263607.scene_instance.json",
+      "image": "108736872_177263607.png",
+      "meta": "108736872_177263607.json",
+      "ortho_scale": null
+    }
+  ]
+}

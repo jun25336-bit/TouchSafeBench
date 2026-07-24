@@ -1,0 +1,213 @@
+{
+  "run_tag": "all_gpt-5.5_arm+head_rgbd_n900",
+  "config": {
+    "task": "all",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "human_types": [
+      "neutral_0",
+      "female_2",
+      "male_2"
+    ],
+    "sim_task_types": [
+      "social_navigation",
+      "social_rearrangement"
+    ],
+    "views": [
+      "arm",
+      "head"
+    ],
+    "clip_size": 3,
+    "max_samples": 450,
+    "dry_run": false
+  },
+  "samples": {
+    "total": 900,
+    "task1": 450,
+    "task2": 450
+  },
+  "token_usage": {
+    "total_tokens_this_session": 17450537
+  },
+  "task1_metrics": {
+    "n_samples": 450,
+    "n_unknown": 0,
+    "accuracy": 0.5311,
+    "f1_macro": 0.5138,
+    "f1_per_class": {
+      "A": 0.5544,
+      "B": 0.3738,
+      "C": 0.6133
+    },
+    "confusion_matrix": {
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "matrix": [
+        [
+          107,
+          14,
+          29
+        ],
+        [
+          81,
+          40,
+          29
+        ],
+        [
+          48,
+          10,
+          92
+        ]
+      ]
+    },
+    "classification_report": {
+      "A": {
+        "precision": 0.4533898305084746,
+        "recall": 0.7133333333333334,
+        "f1-score": 0.5544041450777203,
+        "support": 150.0
+      },
+      "B": {
+        "precision": 0.625,
+        "recall": 0.26666666666666666,
+        "f1-score": 0.37383177570093457,
+        "support": 150.0
+      },
+      "C": {
+        "precision": 0.6133333333333333,
+        "recall": 0.6133333333333333,
+        "f1-score": 0.6133333333333333,
+        "support": 150.0
+      }
+    },
+    "per_sample_type_accuracy": {
+      "human_collision_risk": 0.6133,
+      "no_event_easy": 0.68,
+      "no_event_hard_negative": 0.7467,
+      "scene_collision": 0.2667
+    }
+  },
+  "task1_structured_metrics": {
+    "distance": {
+      "n_pairs": 1171,
+      "mae": 1.0008,
+      "median_ae": 0.445,
+      "correlation": 0.7445
+    },
+    "distance_trend": {
+      "n_samples": 450,
+      "accuracy": 0.4311
+    },
+    "collision_flags_human": {
+      "tp": 107,
+      "fp": 272,
+      "fn": 65,
+      "tn": 906,
+      "f1": 0.3884,
+      "accuracy": 0.7504
+    },
+    "collision_flags_scene": {
+      "tp": 76,
+      "fp": 57,
+      "fn": 505,
+      "tn": 712,
+      "f1": 0.2129,
+      "accuracy": 0.5837
+    }
+  },
+  "task2_metrics": {
+    "n_samples": 450,
+    "n_unknown": 0,
+    "accuracy": 0.4311,
+    "f1_macro": 0.4092,
+    "f1_per_class": {
+      "A": 0.2696,
+      "B": 0.4281,
+      "C": 0.5299
+    },
+    "confusion_matrix": {
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "matrix": [
+        [
+          31,
+          50,
+          69
+        ],
+        [
+          25,
+          61,
+          64
+        ],
+        [
+          24,
+          24,
+          102
+        ]
+      ]
+    },
+    "classification_report": {
+      "A": {
+        "precision": 0.3875,
+        "recall": 0.20666666666666667,
+        "f1-score": 0.26956521739130435,
+        "support": 150.0
+      },
+      "B": {
+        "precision": 0.45185185185185184,
+        "recall": 0.4066666666666667,
+        "f1-score": 0.4280701754385965,
+        "support": 150.0
+      },
+      "C": {
+        "precision": 0.4340425531914894,
+        "recall": 0.68,
+        "f1-score": 0.5298701298701299,
+        "support": 150.0
+      }
+    },
+    "per_sample_type_accuracy": {
+      "human_collision_imminent": 0.68,
+      "no_risk_easy": 0.16,
+      "no_risk_hard_negative": 0.24,
+      "no_risk_post_collision": 0.22,
+      "scene_collision_imminent": 0.4067
+    },
+    "far_c": 0.46,
+    "far_any": 0.7933
+  },
+  "task2_structured_metrics": {
+    "distance": {
+      "n_pairs": 1143,
+      "mae": 1.0219,
+      "median_ae": 0.5079,
+      "correlation": 0.756
+    },
+    "distance_trend": {
+      "n_samples": 450,
+      "accuracy": 0.3956
+    },
+    "collision_flags_human": {
+      "tp": 0,
+      "fp": 9,
+      "fn": 0,
+      "tn": 1341,
+      "f1": 0.0,
+      "accuracy": 0.9933
+    },
+    "collision_flags_scene": {
+      "tp": 4,
+      "fp": 40,
+      "fn": 97,
+      "tn": 1209,
+      "f1": 0.0552,
+      "accuracy": 0.8985
+    }
+  }
+}

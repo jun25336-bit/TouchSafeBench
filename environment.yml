@@ -1,0 +1,15 @@
+name: habitat
+channels:
+  - conda-forge
+  - aihabitat
+  - defaults
+dependencies:
+  - python=3.9
+  - cmake=3.14.0
+  - habitat-sim=0.3.3
+  - withbullet
+  - headless
+  - ffmpeg
+  - pip
+  - pip:
+      - -r requirements.txt

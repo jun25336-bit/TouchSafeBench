@@ -1,0 +1,18 @@
+19:50:45 [INFO] Run tag: all_qwen3-vl-32b_head+arm_rgb_n12894
+19:50:45 [INFO] Config: task=all, provider=local, model=qwen3-vl-32b, views=['head', 'arm'], modality=rgb, max_samples=0, clip_size=3, dry_run=False, resume=True
+19:50:45 [INFO] Loading local model: Qwen/Qwen3-VL-32B-Instruct (family: qwen3vl)
+19:50:48 [INFO] Qwen3-VL attn_implementation: sdpa
+19:59:33 [INFO] Model loaded: Qwen/Qwen3-VL-32B-Instruct
+19:59:33 [INFO]   transformers: 4.57.6
+19:59:33 [INFO]   torch: 2.8.0+cu128
+19:59:33 [INFO]   CUDA: 12.8
+19:59:33 [INFO]   model commit: 0cfaf48183f594c314753d30a4c4974bc75f3ccb
+19:59:33 [INFO] 
+============================================================
+19:59:33 [INFO] Running Task 1: Safety Event Classification
+19:59:33 [INFO] ============================================================
+20:00:34 [INFO]   [1/6465] t1_B_5811 gt=B pred=A [MISS] tok=6853 cumul=6,853
+20:01:34 [INFO]   [2/6465] t1_A_hard_24029 gt=A pred=A [OK] tok=6885 cumul=13,738
+20:02:29 [INFO]   [3/6465] t1_C_7659 gt=C pred=C [OK] tok=6818 cumul=20,556
+20:03:30 [INFO]   [4/6465] t1_B_2239 gt=B pred=C [MISS] tok=6881 cumul=27,437
+20:04:23 [INFO]   [5/6465] t1_A_easy_19668 gt=A pred=A [OK] tok=6714 cumul=34,151

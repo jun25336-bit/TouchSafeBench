@@ -1,0 +1,17 @@
+{
+  "width": 2559,
+  "height": 1870,
+  "pixel_scale": 0.00981317893216323,
+  "center_x": 2.049189819987136,
+  "center_z": -7.35430022753354,
+  "floor_y": -0.03559422865509987,
+  "ceiling_y": 3.5142502784729004,
+  "extent_x": 24.62915496699791,
+  "extent_z": 17.865833868777028,
+  "camera_height": 8.5142502784729,
+  "margin": 1.1,
+  "world_to_pixel": "px = (world_x - center_x) / pixel_scale + width / 2; py = (world_z - center_z) / pixel_scale + height / 2",
+  "pixel_to_world": "world_x = (px - width / 2) * pixel_scale + center_x; world_z = (py - height / 2) * pixel_scale + center_z",
+  "scene_id": "data/scene_datasets/hssd-hab/scenes-uncluttered/102344049.scene_instance.json",
+  "scene_name": "102344049"
+}

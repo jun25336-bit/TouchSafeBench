@@ -1,0 +1,241 @@
+{
+  "run_tag": "all_gemini-3.1-pro-preview_4v_depth_color_n900",
+  "config": {
+    "task": "all",
+    "provider": "gemini",
+    "model": "gemini-3.1-pro-preview",
+    "human_types": [
+      "neutral_0",
+      "female_2",
+      "male_2"
+    ],
+    "sim_task_types": [
+      "social_navigation",
+      "social_rearrangement"
+    ],
+    "views": [
+      "third_robot",
+      "third_human",
+      "arm",
+      "head"
+    ],
+    "clip_size": 3,
+    "max_samples": 450,
+    "dry_run": false
+  },
+  "samples": {
+    "total": 900,
+    "task1": 450,
+    "task2": 450
+  },
+  "token_usage": {
+    "total_tokens_this_session": 16312168
+  },
+  "task1_metrics": {
+    "n_samples": 450,
+    "n_unknown": 0,
+    "accuracy": 0.5311,
+    "f1_macro": 0.5188,
+    "f1_per_class": {
+      "A": 0.4122,
+      "B": 0.4482,
+      "C": 0.6962
+    },
+    "confusion_matrix": {
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "matrix": [
+        [
+          54,
+          65,
+          31
+        ],
+        [
+          43,
+          67,
+          40
+        ],
+        [
+          15,
+          17,
+          118
+        ]
+      ]
+    },
+    "classification_report": {
+      "A": {
+        "precision": 0.48214285714285715,
+        "recall": 0.36,
+        "f1-score": 0.4122137404580153,
+        "support": 150.0
+      },
+      "B": {
+        "precision": 0.44966442953020136,
+        "recall": 0.44666666666666666,
+        "f1-score": 0.44816053511705684,
+        "support": 150.0
+      },
+      "C": {
+        "precision": 0.6243386243386243,
+        "recall": 0.7866666666666666,
+        "f1-score": 0.696165191740413,
+        "support": 150.0
+      },
+      "accuracy": 0.5311111111111111,
+      "macro avg": {
+        "precision": 0.518715303670561,
+        "recall": 0.5311111111111111,
+        "f1-score": 0.5188464891051617,
+        "support": 450.0
+      },
+      "weighted avg": {
+        "precision": 0.518715303670561,
+        "recall": 0.5311111111111111,
+        "f1-score": 0.5188464891051617,
+        "support": 450.0
+      }
+    },
+    "per_sample_type_accuracy": {
+      "no_event_easy": 0.3467,
+      "scene_collision": 0.4467,
+      "no_event_hard_negative": 0.3733,
+      "human_collision_risk": 0.7867
+    }
+  },
+  "task1_structured_metrics": {
+    "distance": {
+      "n_pairs": 1158,
+      "mae": 0.66,
+      "median_ae": 0.3244,
+      "correlation": 0.6039
+    },
+    "distance_trend": {
+      "n_samples": 450,
+      "accuracy": 0.4333
+    },
+    "collision_flags_human": {
+      "tp": 136,
+      "fp": 179,
+      "fn": 36,
+      "tn": 999,
+      "f1": 0.5585,
+      "accuracy": 0.8407
+    },
+    "collision_flags_scene": {
+      "tp": 102,
+      "fp": 134,
+      "fn": 479,
+      "tn": 635,
+      "f1": 0.2497,
+      "accuracy": 0.5459
+    }
+  },
+  "task2_metrics": {
+    "n_samples": 450,
+    "n_unknown": 0,
+    "accuracy": 0.5022,
+    "f1_macro": 0.4779,
+    "f1_per_class": {
+      "A": 0.347,
+      "B": 0.4946,
+      "C": 0.592
+    },
+    "confusion_matrix": {
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "matrix": [
+        [
+          38,
+          45,
+          67
+        ],
+        [
+          15,
+          69,
+          66
+        ],
+        [
+          16,
+          15,
+          119
+        ]
+      ]
+    },
+    "classification_report": {
+      "A": {
+        "precision": 0.5507246376811594,
+        "recall": 0.25333333333333335,
+        "f1-score": 0.3470319634703196,
+        "support": 150.0
+      },
+      "B": {
+        "precision": 0.5348837209302325,
+        "recall": 0.46,
+        "f1-score": 0.4946236559139785,
+        "support": 150.0
+      },
+      "C": {
+        "precision": 0.4722222222222222,
+        "recall": 0.7933333333333333,
+        "f1-score": 0.5920398009950248,
+        "support": 150.0
+      },
+      "accuracy": 0.5022222222222222,
+      "macro avg": {
+        "precision": 0.5192768602778713,
+        "recall": 0.5022222222222222,
+        "f1-score": 0.4778984734597744,
+        "support": 450.0
+      },
+      "weighted avg": {
+        "precision": 0.5192768602778713,
+        "recall": 0.5022222222222222,
+        "f1-score": 0.47789847345977426,
+        "support": 450.0
+      }
+    },
+    "far_c": 0.64,
+    "far_any": 0.88,
+    "per_sample_type_accuracy": {
+      "human_collision_imminent": 0.7933,
+      "no_risk_post_collision": 0.36,
+      "scene_collision_imminent": 0.46,
+      "no_risk_hard_negative": 0.12,
+      "no_risk_easy": 0.28
+    }
+  },
+  "task2_structured_metrics": {
+    "distance": {
+      "n_pairs": 1150,
+      "mae": 0.8223,
+      "median_ae": 0.4559,
+      "correlation": 0.6789
+    },
+    "distance_trend": {
+      "n_samples": 450,
+      "accuracy": 0.4022
+    },
+    "collision_flags_human": {
+      "tp": 0,
+      "fp": 55,
+      "fn": 0,
+      "tn": 1295,
+      "f1": 0.0,
+      "accuracy": 0.9593
+    },
+    "collision_flags_scene": {
+      "tp": 3,
+      "fp": 68,
+      "fn": 105,
+      "tn": 1174,
+      "f1": 0.0335,
+      "accuracy": 0.8719
+    }
+  }
+}

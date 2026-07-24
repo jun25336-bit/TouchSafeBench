@@ -1,0 +1,142 @@
+======================================================================
+  Habitat Safety Benchmark — Evaluation Report
+======================================================================
+  Provider      : openai
+  Model         : gpt-5.5
+  Human types   : ['neutral_0', 'female_2', 'male_2']
+  Sim tasks     : ['social_navigation', 'social_rearrangement']
+  Views         : ['arm', 'head']
+  Clip size     : 3
+  Max samples   : 450
+  Dry run       : False
+
+----------------------------------------------------------------------
+  TASK 1: Safety Event Classification
+----------------------------------------------------------------------
+  Samples       : 450
+  Unknown       : 0
+  Accuracy      : 0.4444
+  Macro-F1      : 0.3826
+  F1 per class  : A=0.5388  B=0.1404  C=0.4686
+  Confusion Matrix (rows=GT, cols=Pred):
+              A     B     C
+    A    132     6    12
+    B    117    12    21
+    C     91     3    56
+  Per sample-type accuracy:
+    no_event_easy                      : 0.8267
+    scene_collision                    : 0.0800
+    human_collision_risk               : 0.3733
+    no_event_hard_negative             : 0.9333
+  Structured field metrics:
+    Distance MAE      : 1.8605 m (1102 pairs)
+    Distance MedianAE : 0.4094 m
+    Distance Corr     : 0.2763
+    Trend Accuracy    : 0.3200 (450 samples)
+    Human-flag F1     : 0.3923  Acc=0.8370  (TP=71 FP=119 FN=101 TN=1059)
+    Scene-flag F1     : 0.0769  Acc=0.5733  (TP=24 FP=19 FN=557 TN=750)
+
+----------------------------------------------------------------------
+  TASK 2: Collision Early Warning
+----------------------------------------------------------------------
+  Samples       : 450
+  Unknown       : 0
+  Accuracy      : 0.4333
+  Macro-F1      : 0.4171
+  F1 per class  : A=0.3223  B=0.4135  C=0.5153
+  FAR-C         : 0.5000
+  FAR-any       : 0.6600
+  Confusion Matrix (rows=GT, cols=Pred):
+              A     B     C
+    A     39    41    70
+    B     24    55    71
+    C     29    20   101
+  Per sample-type accuracy:
+    no_risk_easy                       : 0.2800
+    human_collision_imminent           : 0.6733
+    no_risk_hard_negative              : 0.3400
+    no_risk_post_collision             : 0.1600
+    scene_collision_imminent           : 0.3667
+  Structured field metrics:
+    Distance MAE      : 0.6780 m (1039 pairs)
+    Distance MedianAE : 0.3844 m
+    Distance Corr     : 0.6625
+    Trend Accuracy    : 0.3822 (450 samples)
+    Human-flag F1     : 0.0000  Acc=0.9993  (TP=0 FP=1 FN=0 TN=1349)
+    Scene-flag F1     : 0.0000  Acc=0.9089  (TP=0 FP=22 FN=101 TN=1227)
+
+======================================================================
+07:43:41 [INFO] Overall: 395/900 correct, 505 failures
+07:43:41 [INFO] Done.
+
+# ===== GT CORRECTED (fix_gt_and_recompute.py) =====
+
+======================================================================
+  Habitat Safety Benchmark — Evaluation Report
+======================================================================
+  Provider      : openai
+  Model         : gpt-5.5
+  Human types   : ['neutral_0', 'female_2', 'male_2']
+  Sim tasks     : ['social_navigation', 'social_rearrangement']
+  Views         : ['arm', 'head']
+  Clip size     : 3
+  Max samples   : 450
+  Dry run       : False
+
+----------------------------------------------------------------------
+  TASK 1: Safety Event Classification
+----------------------------------------------------------------------
+  Samples       : 450
+  Unknown       : 0
+  Accuracy      : 0.4444
+  Macro-F1      : 0.3826
+  F1 per class  : A=0.5388  B=0.1404  C=0.4686
+  Confusion Matrix (rows=GT, cols=Pred):
+            A     B     C
+    A     132     6    12
+    B     117    12    21
+    C      91     3    56
+  Per sample-type accuracy:
+    human_collision_risk                  : 0.3733
+    no_event_easy                         : 0.8267
+    no_event_hard_negative                : 0.9333
+    scene_collision                       : 0.0800
+  Structured field metrics:
+    Distance MAE      : 0.8026 m (1102 pairs)
+    Distance MedianAE : 0.3242 m
+    Distance Corr     : 0.6498
+    Trend Accuracy    : 0.4489 (450 samples)
+    Human-flag F1     : 0.3923  Acc=0.8370  (TP=71 FP=119 FN=101 TN=1059)
+    Scene-flag F1     : 0.0769  Acc=0.5733  (TP=24 FP=19 FN=557 TN=750)
+
+----------------------------------------------------------------------
+  TASK 2: Collision Early Warning
+----------------------------------------------------------------------
+  Samples       : 450
+  Unknown       : 0
+  Accuracy      : 0.4333
+  Macro-F1      : 0.4170
+  F1 per class  : A=0.3223  B=0.4135  C=0.5153
+  FAR-C         : 0.4667
+  FAR-any       : 0.7400
+  Confusion Matrix (rows=GT, cols=Pred):
+            A     B     C
+    A      39    41    70
+    B      24    55    71
+    C      29    20   101
+  Per sample-type accuracy:
+    human_collision_imminent              : 0.6733
+    no_risk_easy                          : 0.2800
+    no_risk_hard_negative                 : 0.3400
+    no_risk_post_collision                : 0.1600
+    scene_collision_imminent              : 0.3667
+  Structured field metrics:
+    Distance MAE      : 0.6795 m (1039 pairs)
+    Distance MedianAE : 0.3865 m
+    Distance Corr     : 0.6624
+    Trend Accuracy    : 0.3822 (450 samples)
+    Human-flag F1     : 0.0000  Acc=0.9993  (TP=0 FP=1 FN=0 TN=1349)
+    Scene-flag F1     : 0.0000  Acc=0.9089  (TP=0 FP=22 FN=101 TN=1227)
+
+======================================================================
+Overall: 395/900 correct, 505 failures
