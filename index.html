@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="TouchSafeBench: a physics-grounded benchmark for evaluating collision grounding in vision-language models for safe human-robot collaboration. CoRL 2026.">
+  <meta name="keywords" content="TouchSafeBench, Human-Robot Collaboration, Robot Safety, Vision-Language Models, Collision Grounding, Habitat 3.0, CoRL 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TouchSafeBench</title>
+
+  <meta property="og:title" content="TouchSafeBench: Probing Collision Grounding in Vision-Language Models for Safe Human-Robot Collaboration">
+  <meta property="og:description" content="A physics-grounded benchmark of 2,940 Habitat 3.0 human-robot co-presence episodes for evaluating whether VLMs can tell safe motion from present or imminent collision. CoRL 2026.">
+  <meta property="og:image" content="https://jun25336-bit.github.io/TouchSafeBench/static/images/teaser_safety_events.jpg">
+  <meta property="og:url" content="https://jun25336-bit.github.io/TouchSafeBench/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">TouchSafeBench</h1>
+          <h2 class="title is-2 publication-title paper-title">Probing Collision Grounding in <span class="nowrap">Vision&#8209;Language</span> Models for Safe <span class="nowrap">Human&ndash;Robot</span> Collaboration</h2>
+
+          <div class="is-size-5 publication-authors">
+            <!-- To link a name to a homepage, wrap it as:
+                 <a href="https://..." target="_blank">Jun Wang</a> -->
+            <span class="author-block">Jun Wang<sup>1*</sup>,</span>
+            <span class="author-block">Xiaohao Xu<sup>1*&dagger;</sup>,</span>
+            <span class="author-block">Xiaonan Huang<sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Michigan, Ann Arbor</span>
+          </div>
+          <div class="author-notes">
+            <sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>&dagger;</sup>Project lead
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2605.31196"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2605.31196"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jun25336-bit/TouchSafeBench"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/face12345/TouchSafeBench"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                </a>
+              </span>
+              <!-- BibTeX Link. -->
+              <span class="link-block">
+                <a href="./static/touchsafebench.bib"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-quote-left"></i>
+                  </span>
+                  <span>Cite</span>
+                </a>
+              </span>
+            </div>
+
+            <div class="has-text-centered" style="margin-bottom: 5px;">
+              <!-- CoRL Link. -->
+              <span class="link-block">
+                <a href="https://www.corl.org/"
+                   class="external-link button is-normal is-rounded"
+                   style="background-color: #48c774; color: white; border: none;" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-trophy"></i>
+                  </span>
+                  <span>Accepted at CoRL 2026</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser_safety_events.jpg"
+           class="teaser"
+           style="width: 100%;"
+           alt="Example TouchSafeBench clips: safe operation, near-miss hard negative, scene collision, and human collision, each shown at three time points plus a top-down trajectory map."/>
+      <h2 class="subtitle has-text-centered">
+        TouchSafeBench asks whether a vision-language model can tell <em>safe operation</em>,
+        a visually plausible <em>near miss</em>, <em>robot&ndash;scene collision</em>, and
+        <em>robot&ndash;human collision</em> apart from short multi-view clips, using
+        simulator contact and trajectory state as ground truth.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Safe human&ndash;robot collaboration requires more than visual description: a monitor must
+determine whether the robot body is safely separated, already colliding with the scene or a
+person, or about to collide. We call this capability <em>collision grounding</em>: binding visual
+observations to robot body geometry, camera viewpoint, scene layout, human proximity, and temporal
+motion in order to infer present and imminent contact.
+          </p>
+          <p>
+We introduce <strong>TouchSafeBench</strong>, a physics-grounded benchmark for evaluating collision
+grounding in vision-language models (VLMs). Built in Habitat&nbsp;3.0, TouchSafeBench contains
+2,940 simulated indoor co-presence episodes across social navigation and social rearrangement, with
+synchronized multi-view RGB-D observations, top-down trajectory maps, calibrated camera metadata,
+and simulator-derived contact labels. We study two deployment-facing tasks: classifying the current
+safety state and warning about imminent collision before contact. Across three frontier or
+robotics-oriented VLMs, nine visual representations, and three viewpoint configurations, current
+models remain far from reliable: the best Macro-F1 on either task is 56%, depth inputs are not
+automatically transformed into robot-body collision evidence, and robot&ndash;scene contact is
+consistently harder than human-contact risk. An expert human given the same clips reaches 74% with
+all views, far above every model, yet shares the scene-contact blind spot, and the failure modes
+transfer to real recordings.
+          </p>
+          <p>
+TouchSafeBench reveals a central limitation of VLMs used as embodied safety monitors: visual
+fluency does not imply physical accountability. Reliable robot safety monitors will need
+representations that explicitly bind viewpoint, robot morphology, metric collision geometry, and
+future collision. Code and data are available through the links above.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Benchmark</h2>
+
+    <figure class="paper-figure">
+      <img src="./static/images/data_generation.png"
+           alt="Data generation pipeline: 49 HSSD-HAB scenes, 9 YCB objects, and 3 SMPL-X humanoids are combined across two Habitat 3.0 tasks to produce 2,940 episodes, each with four RGB-D streams, a trajectory file, and camera parameters."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Data generation.</strong> HSSD-HAB scenes, YCB objects, and SMPL-X humanoids are
+        combined across two Habitat&nbsp;3.0 tasks and three humanoid appearances to yield 2,940
+        episodes with RGB-D streams, trajectories, and camera metadata.
+      </figcaption>
+    </figure>
+
+    <figure class="paper-figure">
+      <img src="./static/images/synchronized_observations.jpg"
+           alt="Synchronized observations of one event: ego-view robot, ego-view human, third-person robot, third-person human, in RGB and depth, plus a top-down trajectory map with a zoom-in."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Synchronized observations.</strong> We record ego-view, third-person, RGB, depth, and
+        top-down trajectory evidence for the same event, enabling controlled ablation over viewpoint
+        and depth modality.
+      </figcaption>
+    </figure>
+
+    <figure class="paper-figure">
+      <img src="./static/images/evaluation_protocol.png"
+           alt="Evaluation protocol: clips are built from three episode time points; Stage I sweeps nine visual representations; Stage II fixes RGB and varies viewpoint context; each VLM returns a structured JSON response that is scored."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Evaluation protocol.</strong> Clips are built from three episode time points, Stage&nbsp;I
+        sweeps nine visual representations, Stage&nbsp;II fixes RGB and varies viewpoint context, and
+        each VLM returns a structured JSON response scored by classification and diagnostic metrics.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content key-findings">
+          <ul>
+            <li><strong>Current VLMs are far from reliable collision monitors.</strong> Across three
+              frontier or robotics-oriented models, nine visual representations, and three viewpoint
+              configurations, the best Macro-F1 on either task is 56%.</li>
+            <li><strong>Depth is not automatically turned into collision evidence.</strong> Depth
+              variants do not monotonically improve performance, so current models do not convert
+              depth images into metric robot-body contact evidence.</li>
+            <li><strong>Robot&ndash;scene contact is the dominant blind spot.</strong> Scene collision and
+              scene-collision warning are consistently the hardest sample types, and a human expert
+              shares this blind spot.</li>
+            <li><strong>Humans are far ahead, and viewpoint matters.</strong> An expert given the same
+              clips reaches 74% Macro-F1 with all views; top-down trajectory context sharply reduces
+              model false alarms even when present-tense contact recognition stays hard.</li>
+            <li><strong>The failure modes transfer to real recordings.</strong> A replication on
+              TH&Ouml;R-MAGNI motion-capture data shows the same error patterns outside simulation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <figure class="paper-figure">
+      <img src="./static/images/results_summary.png"
+           alt="Empirical summary: four panels covering robotics-oriented pretraining, depth variants, scene-contact subtypes, and the split of scene-risk errors."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Empirical summary and failure anatomy.</strong> <strong>A:</strong> Robotics-oriented
+        pretraining reduces false alarms but does not raise Macro-F1. <strong>B:</strong> Depth variants
+        do not monotonically improve performance, indicating that current VLMs do not automatically
+        convert depth images into metric robot-body contact evidence. <strong>C:</strong> Scene-contact
+        subtypes are the hardest in both tasks. <strong>D:</strong> Scene-risk errors split between
+        missing contact evidence and misattributing risk to the visually salient human.
+      </figcaption>
+    </figure>
+
+    <figure class="paper-figure">
+      <img src="./static/images/viewpoint_insights.png"
+           alt="Horizontal bar charts comparing ego-only, all-view, and top-down RGB inputs for Task 1 Macro-F1, Task 2 Macro-F1, and false-alarm rate."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Viewpoint changes what the model is good at.</strong> Horizontal bars compare the Stage&nbsp;II
+        RGB viewpoint ablation with each model's best ego-only modality from Stage&nbsp;I.
+        <strong>A:</strong> All-view RGB improves Task&nbsp;1 current-state recognition for GPT-5.5 and
+        Gemini&nbsp;3.1&nbsp;Pro, surpassing their best single-view modality baselines.
+        <strong>B:</strong> For Task&nbsp;2, top-down is competitive with ego-only RGB for GPT-5.5 and
+        Gemini&nbsp;3.1&nbsp;Pro, but does not beat the strongest ego-only depth-based condition.
+        <strong>C:</strong> Top-down sharply reduces false alarms, showing that global trajectory context
+        improves calibration even when present-tense contact recognition remains difficult.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Qualitative Analysis</h2>
+
+    <figure class="paper-figure">
+      <img src="./static/images/failure_cases.jpg"
+           alt="Three failure cases, each with RGB and depth frames, the ground-truth and predicted labels, the VLM reasoning excerpt, and the failure pattern."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Failure-case analysis of collision-grounding errors.</strong> Each row shows a
+        representative RGB-D clip and the corresponding VLM reasoning excerpt.
+        <strong>(a)</strong> <em>Gripper-camera attribution fallacy</em>: a wall fills the arm camera during
+        a scene collision, yet the model discounts it because the robot body is behind the gripper
+        camera, producing a B&rarr;A false negative. <strong>(b)</strong> <em>Impossible evidence
+        standards</em>: the model observes close wall or doorway proximity but demands visible overlap,
+        deformation, or penetration that the sensing setup cannot provide, again suppressing
+        scene-contact recall. <strong>(c)</strong> <em>Proximity&ndash;collision fallacy</em>: the model
+        treats close human appearance as collision evidence even when the human is stationary or
+        outside the robot body's path, producing human-risk false alarms.
+      </figcaption>
+    </figure>
+
+    <figure class="paper-figure">
+      <img src="./static/images/success_cases.jpg"
+           alt="Two success cases with RGB and depth frames, labels, and the VLM reasoning excerpt."/>
+      <figcaption class="is-size-6 has-text-grey">
+        <strong>Successful reasoning patterns.</strong> Two representative cases show when correct
+        predictions emerge. <strong>(a)</strong> <em>Full visual occlusion</em>: when a wall or other
+        surface fills the arm camera at near-zero depth and the human is absent, the model correctly
+        interprets the observation as scene contact. <strong>(b)</strong> <em>Camera-geometry
+        disambiguation</em>: when a human appears close in the gripper-mounted camera, the model
+        sometimes correctly reasons that the arm camera is mounted low and forward on the robot body,
+        so image-space proximity does not imply body contact. VLMs succeed when the evidence is either
+        extreme or geometrically unambiguous.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{wang2026touchsafebench,
+  title     = {Probing Collision Grounding in Vision-Language Models for Safe Human--Robot Collaboration},
+  author    = {Jun Wang and Xiaohao Xu and Xiaonan Huang},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2605.31196},
+  note      = {Project page: \url{https://jun25336-bit.github.io/TouchSafeBench/}}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+          Website borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
